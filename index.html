@@ -734,12 +734,13 @@ line-height:1.6;
     <div class="page-container">
         <div class="container">
             <h1>Happy Birthday 🎂 & Happy Valentine’s Day ❤️</h1>
-            <div class="name-highlight">My Diamond 💎</div>
+            <div class="name-highlight">My Diamond 💎 </div><br>
+            <div class = "name-highlight">My Blueberry 🫐</div>
             
             <div class="cute-animal">🐼</div>
             
             <div class="message-box">
-My love Subodh, today is extra special because I get to celebrate YOU twice!  
+My love, today is extra special because I get to celebrate YOU twice!  
 Your birthday reminds me how lucky the world is to have you,  
 and Valentine’s Day reminds me how lucky I am to love you. ❤️  
 Will you let me celebrate both with all my love?
@@ -776,7 +777,10 @@ Will you let me celebrate both with all my love?
             </div>
             <button class="proposal-btn" id="proposalBtn" style="display:none;">💍 Will You Marry Me?</button>
         </div>
-        <div id="loveLetter" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:white;color:#C2185B;padding:30px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.4);z-index:1000;max-width:400px;text-align:center;">
+        <button onclick="document.getElementById('loveLetter').style.display='block'">Open Love Letter 💌</button>
+<button onclick="let m = document.getElementById('bgMusic'); m.paused ? m.play() : m.pause();">Play/Pause Music 🎵</button>
+
+<div id="loveLetter" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:white;color:#C2185B;padding:30px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.4);z-index:1000;max-width:400px;text-align:center;">
 <h2>💌 My Love Letter</h2>
 <p>
 Happy Birthday my love 🎂❤️<br><br>
@@ -787,15 +791,22 @@ Forever yours. 💖
 </p>
 <button onclick="document.getElementById('loveLetter').style.display='none'" style="margin-top:15px;padding:10px 20px;border:none;background:#C2185B;color:white;border-radius:20px;cursor:pointer;">Close 💕</button>
 </div>
+
 <audio id="bgMusic" loop>
 <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
 </audio>
+<button onclick="
+let m = document.getElementById('bgMusic'); 
+m.paused ? m.play() : m.pause();" 
+style="margin-top:15px;padding:10px 20px;border:none;background:#C2185B;color:white;border-radius:20px;cursor:pointer;">
+  Play/Pause Music 🎵
+</button>
 
 <!-- Scrollable content sections -->
 <div class="scroll-content">
     <div class="content-card">
         <h2><span class="heart">💕</span> Why I Want You As My Valentine</h2>
-        <p>Subodh, you're not just special - you're extraordinary. Every moment with you feels magical and I can't imagine spending Valentine's Day with anyone else.</p>
+        <p>Alok, you're not just special - you're extraordinary. Every moment with you feels magical and I can't imagine spending Valentine's Day with anyone else.</p>
         <ul>
             <li>Your smile makes my heart skip a beat</li>
             <li>You understand me like no one else does</li>
@@ -836,7 +847,7 @@ Forever yours. 💖
 </div>
 
 <div class="footer">
-    Made with all my love <span class="heart" style="font-size: 1.5rem;">❤️</span> For subodh, my perfect Valentine
+    Made with all my love <span class="heart" style="font-size: 1.5rem;">❤️</span> For Alok, my perfect Valentine
 </div>
 
 <div class="hearts-background" id="heartsBackground"></div>
@@ -950,4 +961,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
-
